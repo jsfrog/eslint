@@ -29,12 +29,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@git.geek-8.com:8822/common/eslint-config-mass.git"
+    "url": "git@github.com:jsfrog/eslint.git"
   },
-  "publishConfig": {
-    "registry": "https://nexus.geek-8.com/repository/npm-hosted/"
-  },
-  "author": "yansw@geek-8.com",
+  "author": "frogjs@163.com",
   "license": "ISC",
   "dependencies": {}
 }
