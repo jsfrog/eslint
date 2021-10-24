@@ -1,37 +1,36 @@
 {
-  "name": "eslint-config-mass",
-  "version": "1.1.4",
-  "description": "",
-  "main": "index.js",
+  "name": "eslint-config-frogjs",
+  "version": "1.0.0",
+  "description": "frogjs web framework - eslint-config",
+  "main": "lib/index.js",
+  "types": "src/index.ts",
   "engines": {
-    "node": ">= 14.0.0"
+    "node": ">= 16.0.0"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.14",
-    "@types/mocha": "^8.0.4",
-    "@types/node": "^14.14.22",
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
     "@types/should": "^13.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.14.1",
-    "@typescript-eslint/parser": "^4.14.1",
-    "chai": "^4.2.0",
-    "eslint": "^7.18.0",
-    "mocha": "^8.2.1",
-    "prettier": "^2.2.1",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.2",
     "rimraf": "^3.0.2",
     "should": "^13.2.3",
-    "ts-node": "^8.10.2",
-    "typescript": "^4.1.3"
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
   },
   "scripts": {
     "test": "ts-node src/index.ts",
     "build": "rimraf ./lib && tsc",
-    "eslint-test": "eslint test --ext .js,.ts"
+    "lint": "eslint src/**/* && prettier --write ."
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:jsfrog/eslint.git"
+    "url": "git@github.com:jsfrog/eslint-config-frogjs.git"
   },
   "author": "frogjs@163.com",
   "license": "ISC",
-  "dependencies": {}
+  "peerDependencies": {
+  },
+  "dependencies": {
+  }
 }
