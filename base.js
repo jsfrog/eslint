@@ -940,6 +940,6 @@ module.exports = {
             {
                 onlyEquality: true,
             },
-        ],
+        ]
     }
 };
