@@ -2,8 +2,7 @@
   "name": "eslint-config-frogjs",
   "version": "1.0.0",
   "description": "frogjs web framework - eslint-config",
-  "main": "lib/index.js",
-  "types": "src/index.ts",
+  "main": "index.js",
   "engines": {
     "node": ">= 16.0.0"
   },
@@ -32,5 +31,8 @@
   "peerDependencies": {
   },
   "dependencies": {
+    "eslint": "^7.18.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.0"
   }
 }
