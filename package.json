@@ -1,26 +1,38 @@
 {
-  "name": "@frogjs/eslint",
+  "name": "eslint-config-frogjs",
   "version": "1.0.0",
-  "description": "frogjs web framework - eslint",
+  "description": "frogjs web framework - eslint-config",
   "main": "index.js",
   "engines": {
-    "node": ">= 15.0.0"
+    "node": ">= 16.0.0"
   },
-  "devDependencies": {},
-  "peerDependencies": {
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/should": "^13.0.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.2",
+    "rimraf": "^3.0.2",
+    "should": "^13.2.3",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
   },
   "scripts": {
+    "test": "ts-node src/index.ts",
+    "build": "rimraf ./lib && tsc",
+    "lint": "eslint src/**/* && prettier --write ."
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:jsfrog/eslint.git"
+    "url": "git@github.com:jsfrog/eslint-config-frogjs.git"
   },
   "author": "frogjs@163.com",
   "license": "ISC",
+  "peerDependencies": {
+  },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
-    "eslint": "^7.32.0",
-    "babel-eslint": "^10.1.0"
+    "eslint": "^7.18.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.0"
   }
 }
